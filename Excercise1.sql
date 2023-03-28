@@ -1,0 +1,11 @@
+CREATE DATABASE Exercise1; 
+
+CREATE TABLE exercise1.emp_1table (EMP_NUM CHAR(3) NOT NULL, EMP_Lname VARCHAR(15) NULL, EMP_FNAME 
+VARCHAR(15) NULL, EMP_INITIAL CHAR(1) NULL, EMP_HIREDATE DATE NULL,JOB_CODE CHAR(3) NULL, PRIMARY KEY (EMP_NUM));
+
+INSERT INTO exercise1.emp_1table(EMP_NUM, EMP_Lname, EMP_FNAME, EMP_INITIAL, EMP_HIREDATE, JOB_CODE)
+VALUES('346', 'Tezuka', 'Shigeru', 'A', '1993-11-23', '502'), ('765', 'Sangco', 'Jerrold', 'M', '2023-03-03', '501'),  ('573', 'Yamamoto', 'Konomi', 'N', '2023-04-20', '502');
+
+SELECT * FROM exercise1.emp_1table;
+
+SELECT * FROM exercise1.emp_1table WHERE JOB_CODE =502;
