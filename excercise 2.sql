@@ -19,5 +19,9 @@ values ('104', 'Ramoras', 'Anne', 'K', '1998-11-15', 501),
 ('108', 'Washington', 'Raf', 'S', '1989-08-22', 501),
 ('109', 'Field', 'Larry', 'W', '1999-07-18', 501);
 
+
+UPDATE exercise1.emp_1table SET JOB_CODE = '501' WHERE (`EMP_NUM` = '106');
+DELETE FROM exercise1.emp_1table WHERE (`EMP_NUM` = '106');
+
 SELECT * FROM exercise1.emp_1table;
 
